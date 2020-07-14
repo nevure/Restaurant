@@ -25,8 +25,7 @@ public class Fase2 {
 	protected MenuSencillo menuCliente = new MenuSencillo() ;
 	protected InteraccionBasicaConsola ioConsola = new InteraccionBasicaConsola();
 	Euro valorMonetariEuro = new Euro();
-;	
-	
+		
     protected void crearMenuRest () {
     	
     	/*'nomPlato' -> nombre del plato introducido para el menú.
@@ -71,34 +70,33 @@ public class Fase2 {
     	     * y su método agregarplato.
     	     */
     	    
-    		 if (valorMonetariEuro.valorCorrecto(preuPlat))
-    			 menuCliente.agregarPlato(nomPlato, preuPlat); 
-    		 else {
-    		   i--;
-       		   System.out.println("el precio del plato debe ser pagable con billetes de Euro");  			   
-    		 }
+    	    if (valorMonetariEuro.valorCorrecto(preuPlat))
+    		 menuCliente.agregarPlato(nomPlato, preuPlat); 
+    	    else {
+    	         i--;
+       		 System.out.println("el precio del plato debe ser pagable con billetes de Euro");  			   
+    	     }
 			
     	}
     	 	 	
     }
 	
-	protected void fase2Print() {
+    protected void fase2Print() {
 		
-		String platoPedido;
+	String platoPedido;
 		
-		// Llamos al método de la clase que creará el menú del restaurant
-		crearMenuRest();
+	// Llamos al método de la clase que creará el menú del restaurant
+	crearMenuRest();
 								
-		/*
-		 * Interacción con el cliente donde le pedimos que nos diga que desea comer.
-		 * guarda en platoPedido la solicitud del cliente y lo pasa a la lista de 
-		 * pedidos del objeto menuCliente.
-		 */
-		while ((platoPedido = ioConsola.repuestaAPregunta("Dime el plato del menú que deseas. Para dejar de pedir introduce 0: ")).charAt(0) !='0')
-		{
-			menuCliente.agregarPlatoPedido(platoPedido);
-		}
-			
-		
+	/*
+	 * Interacción con el cliente donde le pedimos que nos diga que desea comer.
+	 * guarda en platoPedido la solicitud del cliente y lo pasa a la lista de 
+	 * pedidos del objeto menuCliente.
+	 */
+	while ((platoPedido = ioConsola.repuestaAPregunta("Dime el plato del menú que deseas. Para dejar de pedir introduce 0: ")).charAt(0) !='0')
+	{
+		menuCliente.agregarPlatoPedido(platoPedido);
 	}
+			
+   }
 }
