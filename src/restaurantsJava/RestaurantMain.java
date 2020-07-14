@@ -1,4 +1,4 @@
-/* Ejercico de Noms Ciutats. MAIN
+/* Ejercico de Restaurants MAIN
  * @author Rubén Rodríguez
  * IT Academy
  * Barcelona Activa
