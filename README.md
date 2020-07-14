@@ -3,8 +3,11 @@
 El aplicativo consta de su paquete principal y dentro de este los siguietnes subpaquetes:
 
 1- Paquete utils:
+
   a. paquete utils.IOConsole
+
   b. paquete Utils.Monedes
+
 2- Paquete Cliente.
 
 Se ha intentado en la medida de lo posible estructurar el programa para darle un aire más de POO. Evidentemente de forma muy limitada al ser el problema muy pequeño.
