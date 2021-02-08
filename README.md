@@ -29,7 +29,6 @@ If not, follow next steps:
 > 1. Download and install git CLI if you haven't yet: https://git-scm.com/
  
 > 2. Create a GitHub account if you haven't yet: https://github.com/
- 
 >     Then check for its version, to make sure the installation went fine.
 >     To do so, type this in your terminal or console:
 
