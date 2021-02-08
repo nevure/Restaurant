@@ -1,25 +1,110 @@
-# Restaurant
+# ITProject-ERP-Backend
 
-El aplicativo consta de su paquete principal y dentro de este los siguietnes subpaquetes:
+For this project, whe have a given repo named ITProject-ERP-Frontend,
+with a GitHub remote URL: https://github.com/it-academyproject/ITProject-ERP-Backend.git
 
-1- Paquete utils:
+This documentation will guide you through this Spring project installation.
 
-  a. paquete utils.IOConsole
+NOTE: in this documentation...
 
-  b. paquete Utils.Monedes
+    We will use <localProjectFolderName> as a generic alias for the local folder's name
+    We will use <repoURL> as a generic alias for the remote repo's URL
+    We will use <featureBranchName> as a generic alias for the branches generated from 'Dev'
+    We will use <yourGitHubName> and <yourGitHubEmail> as alias for your user name and email registered in your GitHub account
+    We will use <ScrumTask_ID> as alias for your tasks's id as stated in your SCRUM table.
 
-2- Paquete Cliente.
+## Getting Started
 
-Se ha intentado en la medida de lo posible estructurar el programa para darle un aire más de POO. Evidentemente de forma muy limitada al ser el problema muy pequeño.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+See deployment for notes on how to deploy the project on a live system.
 
-El paquete Cliente nos provee de herramientas para tratar con el cliente del restaurante. El menú del restaurante, el precio de cada plato, el pedido del cliente, la factura final...
+### Prerequisites
 
-El paquete Utils.IOConsole no es más que un "adorno" sobre la entrada y salida de Consola, pero que podría facilitar el trabajo y automatizar algunos procesos.
+It's recommended to have an editor installed that supports Spring and has an application server incorporated. 
+Otherwise, you can manually install the application server and follow the instructions for running the program locally. 
 
-El paquete Utils.Monedes apenas hace nada. En nuestro ejercicio apenas nos verifica  si el precio del plato es pagable con billetes de Euro. Hemos creado esta limitación, sin más motivo que darle una vuelta más al ejercicio. Teniendo en cuenta que se nos dice que creemos una variable por billete de Euro.
+Skip this section's steps if you already have git  installed your local machine, and a valid GitHub account.
+If not, follow next steps:
 
-Luego Las clases de las fases donde la fase 1 apenas hace nada y la fase 2 es la responsable de recoger de consola por medio de los métodos del paquete Utils.IOConsole, los platos del menú y el pedido del cliente.
+ > 1. Download and install git CLI if you haven't yet: https://git-scm.com/
+ > 2. Create a GitHub account if you haven't yet: https://github.com/
+>     Then check for its version, to make sure the installation went fine.
+>     To do so, type this in your terminal or console:
 
-La fase 3 recibe el objeto de la fase 2 para poder seguir trabajando con el menú ya creado y los platos pedidos por el cliente. Con estos datos solo comprueba que el pedido es correcto, verificando que los platos que se piden están en el menú.
+```
+git--version
+```
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
 
 
