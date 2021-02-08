@@ -84,6 +84,7 @@ For example: B1 or B1.4_UserController
 And don't forget to create your feature branches from Dev.
 To do so:
 >1. Pull actual Dev branch state:
+
 	git pull origin Dev
 >2. Create your feature branch:
 	git checkout -b <featureBranchName>
