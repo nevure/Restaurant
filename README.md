@@ -49,7 +49,6 @@ If not, follow next steps:
 
 #### Dependencies for Spring.
 
-Resultados de traducción
 It is recommended to consult the pom.xml file of the DEV branch of the project. This file includes all the current requirements to run the application at this time.
 Summarizing:
 - Validations: groupId: javax.validation. Artifact: validation-api
@@ -63,4 +62,36 @@ Summarizing:
 - the DevTools.
 - Mysql Connector.
 - hibernate validations. 
+
+
+### Installing
+
+A step by step to Clone the repo from remote to local:
+
+> 1.  Clone the repo from remote to local:
+
+    git clone <repoURL>
+
+> 2.  Yoy can open projects from file system in your IDE and open from local clone repo directory. 
+
+
+## WORKING WITH BRANCHES
+
+This project has 2 branches (main and Dev), which should NOT be manipulated by any developer.
+That role is restricted to project managers, who will accept or reject developer's pull requests.
+Use the following semantics for naming your branches: <ScrumTask_ID> or optionally <ScrumTask_ID-featureBranchName>.
+For example: B1 or B1.4_UserController
+
+And don't forget to create your feature branches from Dev.
+To do so:
+>1. Pull actual Dev branch state:
+git pull origin Dev
+>2. Create your feature branch:
+git checkout -b <featureBranchName>
+>3. Work on your branch. Do your add-to-stage and commits
+>4. Pull Dev branch state again:
+git pull origin Dev
+>5. Push your branch to the repo:
+git push origin <featureBranchName>
+>6. Finally, do a pull request in GitHub, from your branch to Dev
 
