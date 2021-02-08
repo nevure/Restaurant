@@ -84,13 +84,12 @@ For example: B1 or B1.4_UserController
 And don't forget to create your feature branches from Dev.
 To do so:
 >1. Pull actual Dev branch state:
->git pull origin Dev
+	git pull origin Dev
 >2. Create your feature branch:
->git checkout -b <featureBranchName>
+	git checkout -b <featureBranchName>
 >3. Work on your branch. Do your add-to-stage and commits
 >4. Pull Dev branch state again:
->git pull origin Dev
+	git pull origin Dev
 >5. Push your branch to the repo:
->git push origin <featureBranchName>
+	git push origin <featureBranchName>
 >6. Finally, do a pull request in GitHub, from your branch to Dev
-
