@@ -23,7 +23,8 @@ See deployment for notes on how to deploy the project on a live system.
 It's recommended to have an editor installed that supports Spring and has an application server incorporated. 
 Otherwise, you can manually install the application server and follow the instructions for running the program locally. 
 
-Skip this section's steps if you already have git  installed your local machine, and a valid GitHub account.
+#### GIT and GITHUB
+Skip this section's steps if you already have GIT  installed your local machine, and a valid GitHub account.
 If not, follow next steps:
 
 > 1. Download and install git CLI if you haven't yet: https://git-scm.com/
@@ -32,9 +33,8 @@ If not, follow next steps:
 >    Then check for its version, to make sure the installation went fine.
 >    To do so, type this in your terminal or console:
 
-```
-git--version
-```
+	git--version
+
 > 3.  Then, set up your name and email for local **git CLI**.  
 >     Type the following commands in your terminal or console:
 
@@ -47,19 +47,21 @@ git--version
     git config –-global user.name
     git config –-global user.email
 
-> 5.  Downlad and install **Node.js** if you haven't yet: https://nodejs.org/es/  
->     Then check for its version, to make sure the installation went fine:
+#### Dependencies for Spring.
 
-    node -v
+582 / 5000
+Resultados de traducción
+It is recommended to consult the pom.xml file of the DEV branch of the project. This file includes all the current requirements to run the application at this time.
+Summarizing:
+- Validations: groupId: javax.validation. Artifact: validation-api
+- JPA.
+- Spring Security
+- Starter Web. (to run the application server included in the IDE)
+- modelMapper. For the DAO-DTO mapping.
+- Jsonwebtoken. To work with tokens in authentication.
+- security-crypto and security core.
+- commons.lang3 from apache.
+- the DevTools.
+- Mysql Connector.
+- hibernate validations. 
 
-> 6.  Downlad and install **Angular CLI** if you haven't yet: https://angular.io/  
->     Install Angular CLI globally in your machine:
-
-    npm install -g @angular/cli
-
-> Then check for its version, to make sure the installation went fine:
-
-    ng v
-
-
-### Installing
