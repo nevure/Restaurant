@@ -49,7 +49,6 @@ If not, follow next steps:
 
 #### Dependencies for Spring.
 
-582 / 5000
 Resultados de traducción
 It is recommended to consult the pom.xml file of the DEV branch of the project. This file includes all the current requirements to run the application at this time.
 Summarizing:
