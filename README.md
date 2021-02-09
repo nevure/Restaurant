@@ -113,11 +113,13 @@ Configuration for a database in MySQL.
 
 > spring.datasource.url=jdbc:mysql://localhost:3306/proyectoERP?useSSL=false
   spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
-  
   spring.datasource.username=root
   spring.datasource.password=root
+  
+Configure JPA and Hibernate
 
-  spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
+> spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
   spring.jpa.hibernate.ddl-auto=update
   spring.jpa.show-sql = true
   logging.level.org.hibernate.SQL=debug
+
